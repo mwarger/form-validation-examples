@@ -1,3 +1,9 @@
+To run:
+
+npm i
+
+npm start
+
 # Form Validation Examples
 
 - schema validation
