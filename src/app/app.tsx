@@ -1,14 +1,16 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import styles from './app.module.css';
-
-import NxWelcome from './nx-welcome';
+import { Box, Stack } from '@mui/material';
+import { YupExample } from './YupExample';
+import { ZodExample } from './ZodExample';
 
 export function App() {
   return (
-    <div>
-      <NxWelcome title="form-validation-examples" />
-    </div>
+    <Box display={'flex'} gap={4} maxWidth={'100vw'}>
+      <Box sx={{ flex: 1 }}>
+        <YupExample />
+      </Box>
+      <Box sx={{ flex: 1 }}>
+        <ZodExample />
+      </Box>
+    </Box>
   );
 }
-
-export default App;
